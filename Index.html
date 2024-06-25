@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <title>Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-inline: 40px;
+        }
+
+        main {
+            background-image: url('./assets/hg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 10rem;
+        }
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        table {
+            width: 200px;
+        }
+
+        table,
+        th,
+        td {
+            border: 3px solid black;
+            border-collapse: collapse;
+        }
+
+        img {
+            opacity: 0;
+            transform: translateY(-100%);
+            animation: enter 500ms ease-in 400ms forwards;
+        }
+
+        @keyframes enter {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        iframe {
+            width: 100%;
+            height: 700px;
+        }
+
+        .button-link {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 100px;
+            background-color: #34495c;
+            color: white;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-block: 4rem;
+            padding-top: 1rem;
+        }
+
+        .names{
+            font-size: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1 {
+            background-color: rgba(255, 255, 255, .2);
+            backdrop-filter: blur(5px);
+            padding: 1rem;
+            font-weight: bold;
+        };
+
+        
+    </style>
+</head>
+
+<body>
+    <header style="background-color: rgba(236, 157, 8, 0.9);">
+        
+        <img src="assets/whg.png" alt="an image about the sultan" width="400" />
+    </header>
+
+    <main align="Center">
+        <div>
+            <h1>Al-Ballor Techonogy</h1>
+            <div class="names">
+                نصنع- معا- للتغير#
+            </div>
+        </div>
+        <video width="750" height="400" controls  autoplay>
+            <source src="video/oman.mp4" type="video/mp4">
+        </video>
+    </main>
+    <div align='center'>
+        <a href="https://maps.app.goo.gl/WZDBuYnaCKrqSnw7A?g_st=aw" class="button-link">
+            موقع الشركه
+        </a>
+        <br><br>
+    </div>
+    <div align='center' style="background-color: red;" >
+        <a href="signIn.html" class="button-link">
+           اضغط هنا تنتقل الموقع اللي خبرتك عنه فندق
+        </a>
+    </div>
+
+    
+
+</body>
+
+</html>
